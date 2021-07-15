@@ -36,17 +36,15 @@
    certbot certonly -n --agree-tos -t -m "email地址" --standalone -d "域名"
    会生成两个文件。要记录下来
    ```
-   
-~~ ```bash
-    sudo apt-get -y update && sudo apt-get -y install python3 git
-    git clone https://github.com/aploium/zmirror-onekey.git --depth=1
-    cd zmirror-onekey
-    sudo python3 deploy.py
-    ```
-    然后按照脚本给予的提示继续, 过程中会自动获取SSL证书  
-    如果有不懂的, 可参考下面的安装视频  
-    如果遇到bug, 请[发issues](https://github.com/aploium/zmirror-onekey/issues)提出  
-~~ 
+
+  ~~sudo apt-get -y update && sudo apt-get -y install python3 git~~
+  ~~git clone https://github.com/aploium/zmirror-onekey.git --depth=1~~
+  ~~cd zmirror-onekey~~
+  ~~sudo python3 deploy.py~~
+
+  ~~然后按照脚本给予的提示继续, 过程中会自动获取SSL证书~~
+  ~~如果有不懂的, 可参考下面的安装视频~~
+  ~~如果遇到bug, 请[发issues](https://github.com/aploium/zmirror-onekey/issues)提出~~ 
 
   
 * **我已有SSL证书**  
