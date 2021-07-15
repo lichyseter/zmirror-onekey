@@ -28,7 +28,16 @@
 ## 运行方法
 
 * **我没有SSL证书 (如果不懂, 请使用这个)**
-    ```bash
+   ```
+   目前这个行不通了，因为Let's Encrypt 的那个工程有变化，那个certbot-auto 已经废弃并删除了。所以要用他的官方的办法来获得ssl 认证。
+   按这个说明做准备。
+   https://certbot.eff.org/lets-encrypt/ubuntuxenial-apache
+   然后执行
+   certbot certonly -n --agree-tos -t -m "email地址" --standalone -d "域名"
+   会生成两个文件。要记录下来
+   ```
+   
+~~ ```bash
     sudo apt-get -y update && sudo apt-get -y install python3 git
     git clone https://github.com/aploium/zmirror-onekey.git --depth=1
     cd zmirror-onekey
@@ -37,7 +46,7 @@
     然后按照脚本给予的提示继续, 过程中会自动获取SSL证书  
     如果有不懂的, 可参考下面的安装视频  
     如果遇到bug, 请[发issues](https://github.com/aploium/zmirror-onekey/issues)提出  
-  
+~~ 
 
   
 * **我已有SSL证书**  
